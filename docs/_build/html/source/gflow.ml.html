@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>gflow.ml package &mdash; gorgias-dataflow 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> gorgias-dataflow
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../runworkflow.html">Running Workflow</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ticketformat.html">Ticket format</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../moduleindex.html">Module index</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../generateindex.html">Index</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../prices.html">Dataflow summary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">gorgias-dataflow</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>gflow.ml package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/gflow.ml.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gflow-ml-package">
+<h1>gflow.ml package<a class="headerlink" href="#gflow-ml-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-gflow.ml.publisher">
+<span id="gflow-ml-publisher-module"></span><h2>gflow.ml.publisher module<a class="headerlink" href="#module-gflow.ml.publisher" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="gflow.ml.publisher.DbFormat">
+<em class="property">class </em><code class="descclassname">gflow.ml.publisher.</code><code class="descname">DbFormat</code><span class="sig-paren">(</span><em>*unused_args</em>, <em>**unused_kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/publisher.html#DbFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.publisher.DbFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">apache_beam.transforms.core.DoFn</span></code></p>
+<p>Transform a prediction into a BigQuery format.</p>
+<dl class="method">
+<dt id="gflow.ml.publisher.DbFormat.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/publisher.html#DbFormat.process"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.publisher.DbFormat.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>just format the output of summarization for BigQuery.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>element</strong> – (json) prediction in json format</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(list) new raw to insert</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="gflow.ml.publisher.run">
+<code class="descclassname">gflow.ml.publisher.</code><code class="descname">run</code><span class="sig-paren">(</span><em>args</em>, <em>pipeline_args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/publisher.html#run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.publisher.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the dataflow job, locally or on the cloud</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> – (argparse.Namespace) all the command line args</li>
+<li><strong>pipeline_args</strong> – (list) all the command line pipeline args</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gflow.ml.pubsub_generator">
+<span id="gflow-ml-pubsub-generator-module"></span><h2>gflow.ml.pubsub_generator module<a class="headerlink" href="#module-gflow.ml.pubsub_generator" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="gflow.ml.pubsub_generator.callback">
+<code class="descclassname">gflow.ml.pubsub_generator.</code><code class="descname">callback</code><span class="sig-paren">(</span><em>message_future</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/pubsub_generator.html#callback"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.pubsub_generator.callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback in case of fail.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>message_future</strong> – (publisher.futures) the new message to push</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="gflow.ml.pubsub_generator.generate_text">
+<code class="descclassname">gflow.ml.pubsub_generator.</code><code class="descname">generate_text</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/pubsub_generator.html#generate_text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.pubsub_generator.generate_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new messages for pubsub based on a ticket_message dataset.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> – (str) dataset path</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(generator) generator of messages</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gflow.ml.subscriber">
+<span id="gflow-ml-subscriber-module"></span><h2>gflow.ml.subscriber module<a class="headerlink" href="#module-gflow.ml.subscriber" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="gflow.ml.subscriber.fake_summarization">
+<code class="descclassname">gflow.ml.subscriber.</code><code class="descname">fake_summarization</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/subscriber.html#fake_summarization"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.subscriber.fake_summarization" title="Permalink to this definition">¶</a></dt>
+<dd><p>Produce ‘fake’ result for summarization (just as example).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data</strong> – (str) ticket_message</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(dict) summarization prediction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="gflow.ml.subscriber.run">
+<code class="descclassname">gflow.ml.subscriber.</code><code class="descname">run</code><span class="sig-paren">(</span><em>args</em>, <em>pipeline_args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gflow/ml/subscriber.html#run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gflow.ml.subscriber.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the dataflow job, locally or on the cloud</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>args</strong> – (argparse.Namespace) all the command line args</li>
+<li><strong>pipeline_args</strong> – (list) all the command line pipeline args</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-gflow.ml">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-gflow.ml" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Julien Wuthrich
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

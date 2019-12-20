@@ -1,0 +1,12 @@
+README.md
+setup.py
+gflow/__init__.py
+gflow/ml/__init__.py
+gflow/ml/publisher.py
+gflow/ml/pubsub_generator.py
+gflow/ml/subscriber.py
+gorgias_dataflow.egg-info/PKG-INFO
+gorgias_dataflow.egg-info/SOURCES.txt
+gorgias_dataflow.egg-info/dependency_links.txt
+gorgias_dataflow.egg-info/not-zip-safe
+gorgias_dataflow.egg-info/top_level.txt

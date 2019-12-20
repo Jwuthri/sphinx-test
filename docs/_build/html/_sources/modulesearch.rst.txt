@@ -1,0 +1,4 @@
+Module search
+==============
+
+* :ref:`search`
